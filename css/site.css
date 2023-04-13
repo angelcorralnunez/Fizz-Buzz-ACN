@@ -1,0 +1,109 @@
+/* font-family: 'Alkatra', cursive;
+font-family: 'Allan', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Mallanna', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    /* fonts */
+    --acn-title-font: 'Bebas Neue', sans-serif;
+    --acn-subtitle-font: 'Fira Sans', sans-serif;
+    --acn-heading-font: 'Bebas Neue', sans-serif;
+    --acn-body-font: 'Roboto', sans-serif;
+
+     /* colors */
+     --acn-primary-color: rgba(41, 179, 173, 1);
+     --acn-secondary-color: rgba(61, 210, 204, 1);
+     --acn-highlight-color: rgba(158, 233, 230, 1);
+     --acn-dark-color: rgba(17, 17, 17, 1);
+     --acn-light-color:  rgba(102, 220, 215, 1);
+     --acn-background-color: rgba(136, 136, 136, 1);
+
+     /* nav bar colors */
+     --acn-nav-bg-color: rgb(33, 33, 33, .8);
+     --acn-nav-toggler-color: var(--acn-highlight-color);
+     --acn-nav-toggler-glow: rgba(207, 244, 243, 1);
+
+    /* form colors */
+    --acn-nav-bg-color: var(--acn--secondary-color);
+    --acn-formfocus-shadow: var(--acn--primary-color);
+    --acn-form-background-color: var(--acn--background-color);
+
+     /* text styles */
+     --acn-title-color: var(--acn--dark-color);
+     --acn-font-size: 1.2rem;
+     --acn-font-weight: 400;
+     --acn-line-height: 1.5rem;
+}
+
+/*Start Sticky Footer*/
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    /*d-flex*/
+    flex-direction: column;
+    /*flex-column*/
+
+  font-family: var(--acn-body-font);
+  font-family: var(acn-font-size);
+  font-family: var(acn-font-weight);
+  font-family: var(acn-line-height);
+  font-family: var(--acn-dark-color);
+  font-family: var(--acn-background-color);
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+/*End Sticky Footer*/
+
+#mainNav {
+    background: var(--acn-dark-color);
+}
+
+footer {
+    background: var(--acn-dark-color);
+    color: var(--acn-light-color);
+}
+
+footer .bi {
+    color: var(--acn-light-color); 
+    font-size: 2rem;
+    padding: .5rem;
+    transition: color .25s ease;
+}
+
+footer .bi:hover {
+    color: var(--acn-navbar-toggler-color);
+
+}
+
+.checklist {
+    list-style-type: none;
+}
+
+.checklist>li i {
+    color: var(--acn-primary-color); 
+    padding-right: .5rem;
+}
+
+.devIcons {
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.appLogo {
+    max-width: 400px;
+    
+}
+
