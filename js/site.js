@@ -4,7 +4,7 @@ function getValues() {
     // declared that below variables are to to pull and "hold" string values from HTML user input
     let sodaNumber = document.getElementById('sodaNumber').value; // ex: sodaNumber = '3' from user/HTML
     let popNumber = document.getElementById('popNumber').value; // ex: popNumber = '5' from user/HTML
-    letendNumber = document.getElementById('endNumber').value; // ex: endNumber = '45' from user input/HTML 
+    let endNumber = document.getElementById('endNumber').value; // ex: endNumber = '45' from user input/HTML 
    
     let sodaNum = parseInt(sodaNumber);
     let popNum = parseInt(popNumber);
@@ -38,7 +38,7 @@ function generateNumbers(sodaNum, popNum, endNum) {
     // in use and accounted for inside the for loop,
     // for loop keeps running until the conditions 
     // of the else if statement below are met
-    for (let i = 1; i <= userNum; i = i + 1) {
+    for (let i = 1; i <= endNum; i = i + 1) {
         // if the current index in array basketOfNumbers 
         // is divisible by sodaNum & popNum,
         // the index integer is removed from the array
