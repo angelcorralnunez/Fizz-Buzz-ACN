@@ -21,7 +21,7 @@ function getValues() {
         Swal.fire({
             icon: 'error',
             title: 'Oops!',
-            text: 'Please enter valid numbers for the 'Soda', 'Pop', and 'Soda Pop' values.',
+            text: 'Please enter valid numbers.',
             backdrop: false
         });
     }
@@ -83,23 +83,14 @@ function displayNumbers(numbers) { //[0, 2, 3,..., 100] => length = example: 101
         let currentNumber = numbers[index];
         // if 'if' condition is met, below css class styling
         // is applied to table data
-        if {
-            results = results + `<tr><td>${currentNumber}</td></tr>`;
-            // if 'else if' condition is met, below css class styling
-            // is applied to table data
-        } else if {
-			results = results + `<tr><td>${currentNumber}</td></tr>`;
-		}
-            // if 'if' condition is met, below css class styling
-            // is applied to table data
-        else if {
+        if (currentNumber) {
+
 			results = results + "<tr><td>" + currentNumber + "</td></tr>";
-            // otherwise, below css class styling
-            // is applied to table data
+
 		} else {
-            results = results + `<tr><td>${currentNumber}</td></tr>`;
-        }
-    }
+			results = results + "<tr><td>" + currentNumber + "</td></tr>";
+		}
+	}
     // results are passed back into HTML ID "results" 
     // and displayed inside the table
     let tableBody = document.getElementById('results');
