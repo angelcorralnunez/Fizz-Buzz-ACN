@@ -83,19 +83,16 @@ function displayNumbers(numbers) { //[0, 2, 3,..., 100] => length = example: 101
         let currentNumber = numbers[index];
         // if 'if' condition is met, below css class styling
         // is applied to table data
-        if /*(currentNumber === )*/ {
-            // results = results + `<tr><td class="soda-pop">${currentNumber}</td></tr>`;
+        if {
             results = results + `<tr><td>${currentNumber}</td></tr>`;
             // if 'else if' condition is met, below css class styling
             // is applied to table data
-        } else if /*(currentNumber === )*/ {
-            // results = results + `<tr><td class="soda">${currentNumber}</td></tr>`;
+        } else if {
 			results = results + `<tr><td>${currentNumber}</td></tr>`;
 		}
             // if 'if' condition is met, below css class styling
             // is applied to table data
-        else if /*(currentNumber === )*/ {
-            // results = results + `<tr><td class="pop">${currentNumber}</td></tr>`;
+        else if {
 			results = results + "<tr><td>" + currentNumber + "</td></tr>";
             // otherwise, below css class styling
             // is applied to table data
@@ -103,9 +100,26 @@ function displayNumbers(numbers) { //[0, 2, 3,..., 100] => length = example: 101
             results = results + `<tr><td>${currentNumber}</td></tr>`;
         }
     }
-    // results = "<tr><td>10</tr></td>11<tr><td>12</tr></td>..."
     // results are passed back into HTML ID "results" 
     // and displayed inside the table
     let tableBody = document.getElementById('results');
     tableBody.innerHTML = results;
 }
+
+
+// if (currentNumber === ) {
+//     results = results + `<tr><td class="soda-pop">${currentNumber}</td></tr>`;
+//     // if 'else if' condition is met, below css class styling
+//     // is applied to table data
+// } else if (currentNumber === ) {
+//     results = results + `<tr><td class="soda">${currentNumber}</td></tr>`;
+// }
+// // if 'if' condition is met, below css class styling
+// // is applied to table data
+// else if (currentNumber === ) {
+//     results = results + `<tr><td class="pop">${currentNumber}</td></tr>`;
+//     // otherwise, below css class styling
+//     // is applied to table data
+// } else {
+//     results = results + `<tr><td>${currentNumber}</td></tr>`;
+// }
