@@ -1,17 +1,22 @@
 // get the start and end numbers from the page
 // Entry point of application AKA Controller function
-function fizzBuzz(fizzBuzzNumber) {
-    // declared that fizzBuzzNumber string is to pull and "hold" 
-    // the values from the HTMl ID "fizzBuzzNumber"
+function fizz() {
+    // declared that start/endValue string is to pull and "hold" 
+    // the values from the HTMl ID "fizzBuzzNumber, fizz, buzz"
         let fizzBuzzNumber = document.getElementById('fizzBuzzNumber').value; // fetch fizzBuzzNumber from user/HTML
-    // convert value from string to integer/value ex: fizzBuzzNumber
-        let fizzBuzzNumber = parseInt(fizzBuzzNumber);  
-    /* it is valid numbers - not "NaN"*/
-    // if fizzBuzzNumber is an integer it's true, 
+        let fizz = document.getElementById('fizz').value; // fetch fizz from user/HTML
+        let buzz = document.getElementById('buzz').value; // fetch fizz from user/HTML
+    // convert value from string to integer/value ex: startNumber/endNumber
+        let fizzBuzzNumber = parseInt(fizzBuzzNuber); 
+        let fizz = parseInt(fizz); 
+        let buzz = parseInt(buzz); 
+    /* they are valid numbers - not "NaN"*/
+    // if start is an integer it's true, 
     // if it's not a number, it's false
-        if (fizzBuzzNumber.isInteger(fizzBuzzNumber)) {
-            let numberArray = generateNumbers(fizzBuzzNumber);
-            // displays numberArray values
+        if (Number.isInteger(startNumber) && Number.isInteger(endNumber)) {
+            // array created from startNumber/endNumber, values stored inside array numberArray
+        let numberArray = generateNumbers(startNumber, endNumber);
+        // displaysNumbers displays numberArray values
             displayNumbers(numberArray);
         } else {
             //display an error
@@ -31,23 +36,6 @@ function fizzBuzz(fizzBuzzNumber) {
         // keep running as long as (it's less than or equal to endNumber); 
         // start at index number and add plus 1 each time 
         // until previous <= statement is no longer true
-        
-        function fizzBuzz(FizzBuzz) {
-            for (let i = 1; i <= FizzBuzz; i = i + 1) {
-                if (i % 3 === 0 && i % 5 === 0) {
-                    console.log('Fizz Buzz')
-                } else if (i % 3 === 0) {
-                    console.log('Fizz')
-                } else if (i % 5 === 0) {
-                    console.log('Buzz')
-                }
-                else {
-                    console.log(i)
-                }
-            }
-        }    
-              
-        
         for (let number = start; number <= end; number = number + 1) {
             number;
             basketOfNumbers.push(number); //[0, 2, 3,..., 100]
@@ -77,17 +65,3 @@ function fizzBuzz(fizzBuzzNumber) {
         let tableBody = document.getElementById('results');
         tableBody.innerHTML = results;
     }
-
-
-
-// // get the fizz and buzz numbers from the page
-// function fizzBuzz() {
-//     // declared that fizz/buzz string is to pull and "hold" 
-//     // the values from the HTMl ID "fizz, buzz"
-//     let fizz = document.getElementById('fizz').value; // fetch fizz from user/HTML
-//     let buzz = document.getElementById('buzz').value; // fetch fizz from user/HTML
-//     // convert value from string to integer/value ex: fizz, buzz
-//     let fizzBuzzNumber = parseInt(fizzBuzzNuber);  
-//     /* they are valid numbers - not "NaN"*/
-//     // if start is an integer it's true, 
-//     // if it's not a number, it's false
