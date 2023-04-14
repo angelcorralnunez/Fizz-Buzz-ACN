@@ -107,3 +107,22 @@ footer .bi:hover {
     
 }
 
+#fizzBuzz {
+    border-radius: 30px;
+}
+
+.fizz td {
+    font-weight: bolder;
+    color: #FFFFFF !important;
+    background-color: #111111 !important;
+}
+.buzz td {
+    font-weight: bolder;
+    color: #66DCD7 !important;
+    background-color: #111111 !important;
+}
+.fizzBuzzNumber td {
+    font-weight: bolder;
+    color: #29b3ad !important;
+    background-color: #c4c4c4 !important;
+}
