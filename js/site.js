@@ -98,19 +98,3 @@ function displayNumbers(numbers) { //[0, 2, 3,..., 100] => length = example: 101
 }
 
 
-// if (currentNumber === ) {
-//     results = results + `<tr><td class="soda-pop">${currentNumber}</td></tr>`;
-//     // if 'else if' condition is met, below css class styling
-//     // is applied to table data
-// } else if (currentNumber === ) {
-//     results = results + `<tr><td class="soda">${currentNumber}</td></tr>`;
-// }
-// // if 'if' condition is met, below css class styling
-// // is applied to table data
-// else if (currentNumber === ) {
-//     results = results + `<tr><td class="pop">${currentNumber}</td></tr>`;
-//     // otherwise, below css class styling
-//     // is applied to table data
-// } else {
-//     results = results + `<tr><td>${currentNumber}</td></tr>`;
-// }
