@@ -108,6 +108,11 @@ footer .bi:hover {
     
 }
 
+.evenNumber {
+    font-weight: bolder;
+    color: red !important;
+}
+
 #soda-Pop {
     border-radius: 30px;
 }

@@ -4,16 +4,16 @@ function getValues() {
     // declared that below variables are to to pull and "hold" string values from HTML user input
     let sodaNumber = document.getElementById('sodaNumber').value; // ex: sodaNumber = '3' from user/HTML
     let popNumber = document.getElementById('popNumber').value; // ex: popNumber = '5' from user/HTML
-    let userNumber = document.getElementById('userNumber').value; // ex: userNumber = '45' from user input/HTML 
-    // convert values from strings to integers ex: userNumber = '45' to sodaNum = 45
+    letendNumber = document.getElementById('endNumber').value; // ex: endNumber = '45' from user input/HTML 
+   
     let sodaNum = parseInt(sodaNumber);
     let popNum = parseInt(popNumber);
-    let userNum = parseInt(userNumber);
+    let endNum = parseInt(endNumber);
     // checks that all number values given by user are valid integers,
-    if (Number.isInteger(sodaNum) && Number.isInteger(popNum) && Number.isInteger(userNum)) {
-        // if variables sodaNum, popNum,and userNum are integers, it's true, 
+    if (Number.isInteger(sodaNum) && Number.isInteger(popNum) && Number.isInteger(endNum)) {
+        // if variables sodaNum, popNum,and endNum are integers, it's true, 
         // and will generate numbers and store them in array 'numberArray'
-        let numberArray = generateNumbers(sodaNum, popNum, userNum);
+        let numberArray = generateNumbers(sodaNum, popNum, endNum);
         // if it's not a number (NaN), it's false, will display error msg
         displayNumbers(numberArray);
     } else {
@@ -29,12 +29,12 @@ function getValues() {
 }
 // generate the range of numbers to display
 // Business/logic function
-function generateNumbers(sodaNum, popNum, userNum) {
+function generateNumbers(sodaNum, popNum, endNum) {
     // declare empty new array 'basketOfNumbers' 
     // to hold values for use in the for loop below
     let basketOfNumbers = [];
     // for loop starts at integer at index position 1
-    // since 'userNum' is at index position 0, and already
+    // since 'endNum' is at index position 0, and already
     // in use and accounted for inside the for loop,
     // for loop keeps running until the conditions 
     // of the else if statement below are met
@@ -83,12 +83,12 @@ function displayNumbers(numbers) { //[0, 2, 3,..., 100] => length = example: 101
         let currentNumber = numbers[index];
         // if 'if' condition is met, below css class styling
         // is applied to table data
-        if (currentNumber) {
+        if (currentNumber % 2 == 0) {
 
-			results = results + "<tr><td>" + currentNumber + "</td></tr>";
+			results = results + `<tr><td class="evenNumber">${currentNumber}</td></tr>`;
 
 		} else {
-			results = results + "<tr><td>" + currentNumber + "</td></tr>";
+            results = results + `<tr><td>${currentNumber}</td></tr>`;
 		}
 	}
     // results are passed back into HTML ID "results" 
