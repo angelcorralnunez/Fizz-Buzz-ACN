@@ -56,7 +56,7 @@
                             <!-- Change link -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/angelcorralnunez" target="_blank">The Repo</a>
+                            <a class="nav-link" href="https://github.com/angelcorralnunez/Soda-Pop" target="_blank">The Repo</a>
                             <!-- Change link -->
                         </li>
                         <li class="nav-item">
@@ -76,56 +76,65 @@
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col">
                 <h1>Soda Pop</h1>
-                <h4 class="lead text-secondary">Coding Challenge</h4>
-                <hr class="text-info" />
-                <h2>Instructions</h2>
+                <h4 class="lead text-secondary">Coding Challenge Description</h4>
+                <hr class="text-info mt-0"/>
                 <p class="text-secondary">
-                    Enter a number to find out if it's divisible by 3,
+                    The user will enter an ending number, and a range of numbers 
+                    starting with 1 up to the number given by the user will be tested
+                    to see if they are divisible by ‘3’, if they are, the numbers 
+                    divisible by ‘3’ will be replaced by the word “Soda”, the numbers 
+                    divisible by ‘5’, will be replaced by the word “Pop”,
+                    and the numbers that are divisible by both ‘3’ and ‘5’,  
+                    will be replaced by the phrase “Soda Pop”. 
+                    Then the app uses the remaining numbers up to the user given 
+                    ending number and determines which ones are even and which ones 
+                    are odd, displaying the even numbers in green and the odd numbers, 
+                    along with the Soda Pop words in gray.
+                </p>
+                <h2>Instructions</h2>
+                <hr class="text-info mt-0"/>
+                <p class="text-secondary mb-5">
+                    Enter an end number to find out that number and all the numbers below it are divisible by 3,
                     divisible by 5, or by both, then press the button 
-                    and the numbers divisible by 3 will appear as "Soda",
-                    and the numbers divisible by 5 will appear as "Pop", 
-                    the numbers divisible by both 3 and 5 will appear as 
-                    "Soda Pop." You can also change the number values 
-                    for "Soda" and "Pop" to divide your number by two 
-                    new values.
+                    and the numbers that are divisible by 3 will appear as "Soda",
+                    the numbers that are divisible by 5 will appear as "Pop", 
+                    then the numbers that are divisible by both 3 and 5 will appear as 
+                    "Soda Pop." 
                 </p>
             </div>
             <!-- app -->
             <div class="col">
                 <form action="#">
-                    <h5 class="lead text-secondary text-capitalize">Enter Number to "Soda Pop"</h5>
+                    <h5 class="lead text-secondary text-capitalize">Enter Number to "Soda Pop"!</h5>
                     <!-- inputs for number value to run in soda/pop -->
                     <div class="row g-3">
                         <div class="col-12">
-                            <label for="endNumber">Soda Pop Number</label>
+                            <label for="endNumber">Range of numbers starts at '1', choose the ending number and enter it below.</label>
                             <input class="form-control border-info" type="Number" name="endNumber"  id="endNumber"
                                 placeholder="End Number" aria-label="End Number" value="0">
                         </div>
                         <div class="col-12 text-end">
-                            <button id="btnSubmit" class="btn btn-secondary border-info text-info" type="button">
+                            <button id="btnSubmit" class="mt-2 mb-4 btn btn-secondary border-info text-info" type="button">
                                 Soda Pop
                             </button>
                     <h5 class="mt-3 text-secondary d-none">Soda Pop Values</h5>
                     <!-- inputs for soda/pop values -->
                     <div class="row g-3">
-                        <div class="col-md-6 d-none">
-                            <label for="sodaNumber d-none">Soda</label>
-                            <input class="d-none form-control border-info" type="Number" name="sodaNumber" id="sodaNumber" 
+                        <div class="row g-3">
+                            <hr class="my-1"/>
+                        <!-- results area -->
+                        <h2 class="mt-2 mb-0 text text-center">Results</h2>
+                        <div class="col-md-6 mt-1 mb-3 d-none">
+                            <label for="sodaNumber">Soda</label>
+                            <input class="form-control border-info" type="Number" name="sodaNumber" id="sodaNumber" 
                                 placeholder="Soda" aria-label="Soda" value="3">
                         </div>
-                        <div class="col-md-6 d-none">
-                            <label for="popNumber d-none">Pop</label>
-                            <input class="d-none form-control border-info" type="Number" name="popNumber" id="popNumber"
+                        <div class="col-md-6 mt-1 mb-3 d-none">
+                            <label for="popNumber">Pop</label>
+                            <input class="form-control border-info" type="Number" name="popNumber" id="popNumber"
                                 placeholder="Pop" aria-label="Pop" value="5">
                         </div>
-                        <div class="col-12 text-end d-none">
-                            <button id="nullSubmit" class="d-none btn btn-secondary border-info text-info" type="button">
-                                Change Soda Pop Values
-                            </button>
-                        </div>
-                        <hr />
-                        <!-- results area -->
-                        <h2 class="mt-3">Results</h2>
+                        <hr class="mb-1"/>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <tbody id="results">

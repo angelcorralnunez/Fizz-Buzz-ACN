@@ -112,19 +112,13 @@ footer .bi:hover {
     border-radius: 30px;
 }
 
-/*.soda-pop td {
+.evenNumbers {
     font-weight: bolder;
     color: #29b3ad !important;
-    background-color: #c4c4c4 !important;
 }
 
-.soda td {
+.remainingNumbers {
     font-weight: bolder;
-    color: #FFFFFF !important;
-    background-color: #111111 !important;
+    color: #888888 !important;
 }
-.pop td {
-    font-weight: bolder;
-    color: #66DCD7 !important;
-    background-color: #111111 !important;
-} */
+

@@ -75,20 +75,24 @@ function generateNumbers(sodaNum, popNum, endNum) {
 // View function
 function displayNumbers(numbers) { //[0, 2, 3,..., 100] => length = example: 101 digits or spaces
     let results = '';
-    // for loop adds 1 to index number, then calculates if index numner is divisible by 2,
-    // if remainder equals "0" exactly, ifna match it applies the CSS class of "evenNumber" 
-    // coloring the even integers,else/otherwise it returns the (odd) integers with normal 
-    // table row styling. 
+    // for loop adds 1 to index number, then calculates if index numbner is divisible by 2,
+    // if remainder equals "0" exactly, it's a match it applies the evenNumber CSS class style
+    // coloring the even integers,else/otherwise it returns the (odd) integers with oddNumber
+    // class style coloring applied. 
     for (let index = 0; index < numbers.length; index = index + 1) {
         let currentNumber = numbers[index];
-        // if 'if' condition is met, below css class styling
-        // is applied to table data
+        // for remaining numbers not divisible by 3, 5, or both -
+        // if condition of divisible by 2 is met, below css class
+        // styling of green is applied to the even number table data
+        // and if not - the remaining numbers including numbers 
+        // divisible by 3, 5, or both - showing as 'soda,' 'pop,'  
+        // or 'soda pop', are displayed in gray
         if (currentNumber % 2 == 0) {
 
-			results = results + `<tr><td class="evenNumber">${currentNumber}</td></tr>`;
+			results = results + `<tr><td class="evenNumbers">${currentNumber}</td></tr>`;
 
 		} else {
-            results = results + `<tr><td>${currentNumber}</td></tr>`;
+            results = results + `<tr><td class="remainingNumbers">${currentNumber}</td></tr>`;
 		}
 	}
     // results are passed back into HTML ID "results" 
