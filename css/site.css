@@ -106,7 +106,7 @@ footer .bi:hover {
 }
 
 .appLogo {
-    max-width: 400px;
+    max-width: 350px;
     
 }
 
@@ -124,9 +124,9 @@ footer .bi:hover {
     color: #888888 !important;
 }
 
-/* Medium devices and smaller (tablets, 768px and under) */
+/* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px)
 
 #app-logo-img {
-    max-width: 350px;
+    min-width: 400px;
 }
