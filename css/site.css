@@ -8,6 +8,7 @@ font-family: 'Fira Sans Condensed', sans-serif;
     --acn-title-font: 'Alkatra', cursive;
     --acn-subtitle-font: 'Fira Sans', sans-serif;
     --acn-heading-font: 'Alkatra', cursive;
+    --acn-body-font: font-family: 'Fira Sans Condensed', sans-serif;
 
      /* colors */
      --acn-primary-color: rgba(41, 179, 173, 1);
@@ -40,7 +41,7 @@ body {
     flex-direction: column;
     /*flex-column*/
 
-  font-family: 'Fira Sans Condensed', sans-serif !important;
+  font-family: var(--acn-body-font) !important;
   font-family: var(acn-font-size);
   font-family: var(acn-font-weight);
   font-family: var(acn-line-height);
