@@ -42,9 +42,9 @@ body {
     /*flex-column*/
 
   font-family: var(--acn-body-font) !important;
-  font-family: var(acn-font-size);
-  font-family: var(acn-font-weight);
-  font-family: var(acn-line-height);
+  font-family: var(--acn-font-size);
+  font-family: var(--acn-font-weight);
+  font-family: var(--acn-line-height);
   font-family: var(--acn-dark-color);
   font-family: var(--acn-background-color);
 }
