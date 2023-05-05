@@ -144,7 +144,7 @@ footer {
     color: var(--acn-dark-color) !important;
 }
 
-.remainingNumbers {
+.oddNumbers {
     font-weight: bolder;
     color: var(--acn-bootstrap-purple-color) !important;
 }

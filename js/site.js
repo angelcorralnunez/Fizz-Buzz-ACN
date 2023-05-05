@@ -92,7 +92,7 @@ function displayNumbers(numbers) { //[0, 2, 3,..., 100] => length = example: 101
 			results = results + `<tr><td class="evenNumbers">${currentNumber}</td></tr>`;
 
 		} else {
-            results = results + `<tr><td class="remainingNumbers">${currentNumber}</td></tr>`;
+            results = results + `<tr><td class="oddNumbers">${currentNumber}</td></tr>`;
 		}
 	}
     // results are passed back into HTML ID "results" 
