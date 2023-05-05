@@ -88,7 +88,7 @@ footer {
 }
 
 .txt-grn-outline {
-    text-shadow: 2px 2px 3px var(--acn-bootstrap-info--emphasis-color);
+    text-shadow: 2px 2px 3px var(--acn-primary-color);
 }
 
 #instructions {
