@@ -17,8 +17,8 @@ font-family: 'Fira Sans Condensed', sans-serif;
      --acn-background-color: rgba(207, 244, 243, 1);
      --acn-bootstrap-info-color: rgba(13, 202, 240, 1); 
      --acn-bootstrap-info--emphasis-color: rgba(9, 84, 99, 1); 
-    --acn-bootstrap-purple-color: rgba(127, 17, 224, 1);
-    --acn-pink-color: rgba(207, 13, 207, 1);
+     --acn-bootstrap-purple-color: rgba(127, 17, 224, 1);
+     --acn-pink-color: rgba(207, 13, 207, 1);
 
      /* text styles */
      --acn-title-color: var(--acn--dark-color);
@@ -84,6 +84,10 @@ footer {
 #code-title {
     font-family: 'Alkatra', cursive;
     color: var(--acn-bootstrap-purple-color);
+}
+
+.txt-grn-outline {
+    text-shadow: 2px 2px 3px var(--acn-bootstrap-info--emphasis-color);
 }
 
 #instructions {
