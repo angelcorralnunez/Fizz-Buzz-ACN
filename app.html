@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>The App</title>
+    <title>Soda Pop</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap -->
@@ -31,18 +31,19 @@
         <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="/images/Semicolon Angel Corral Nunez Logo/Semicolon Only/Semicolon Color logo - no background.png" height="60"><span
-                        class="ms-2 ms-md-3 fs-3 fs-5">Soda Pop</span>
+                    <img src="/images/Semicolon Angel Corral Nunez Logo/Semicolon Only/Semicolon Color logo - no background.png" 
+                    height="60" alt="Logo image of a semi-colon">
+                    <span class="ms-4 ms-md-3 fs-2">Soda Pop</span>
                 </a>
-                <!-- ToDo: Customize mobile hamburger menu button -->
+                <!-- Mobile hamburger menu button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-acn">
+                    <span class="text-info">
                         <i class="bi bi-list"></i>
                     </span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse acn-secondary-color" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link fs-5" href="/index.html">Home</a>
@@ -56,15 +57,15 @@
                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5" href="https://github.com/angelcorralnunez/Soda-Pop" target="_blank">The Repo</a>
+                            <a class="nav-link fs-5" target="blank" href="https://github.com/angelcorralnunez/Soda-Pop">The Repo</a>
                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-5" href="https://angelcorralnunez.netlify.app/" target="_blank">About</a>
+                            <a class="nav-link fs-5" target="blank" href="https://angelcorralnunez.netlify.app/">About</a>
                            
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-" href="#blog">Blog</a> 
+                            <a class="nav-link fs-" target="blank" href="#blog">Blog</a> 
                         </li>
                     </ul>
                 </div>
@@ -72,70 +73,61 @@
         </nav>
     </header>
 
-    <main class="container mt-3">
+    <main class="container mt-4">
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col">
-                <h1>Soda Pop</h1>
-                <h4 class="lead text-secondary">Coding Challenge Description</h4>
-                <hr class="text-info mt-0"/>
-                <p class="text-secondary">
-                    The user will enter an ending number, and a range of numbers 
-                    starting with 1 up to the number given by the user will be tested
-                    to see if they are divisible by ‘3’, if they are, the numbers 
-                    divisible by ‘3’ will be replaced by the word “Soda”, the numbers 
-                    divisible by ‘5’, will be replaced by the word “Pop”,
-                    and the numbers that are divisible by both ‘3’ and ‘5’,  
-                    will be replaced by the phrase “Soda Pop”. 
-                    Then the app uses the remaining numbers up to the user given 
-                    ending number and determines which ones are even and which ones 
-                    are odd, displaying the even numbers in green and the odd numbers, 
-                    along with the Soda Pop words in gray.
-                </p>
-                <h2>Instructions</h2>
-                <hr class="text-info mt-0"/>
-                <p class="text-secondary mb-5">
-                    Enter an end number to find out that number and all the numbers below it are divisible by 3,
-                    divisible by 5, or by both, then press the button 
-                    and the numbers that are divisible by 3 will appear as "Soda",
-                    the numbers that are divisible by 5 will appear as "Pop", 
-                    then the numbers that are divisible by both 3 and 5 will appear as 
-                    "Soda Pop." 
-                </p>
+                <h1 id="app-title" class="display-5 border-bottom border-2 border-info mb-3 mb-md-4 mx-1 text-dark fw-bold">Soda Pop</h1>
+                <h2 class="lead text-bs-purple fw-bold mb-0 mb-md-1 mb-lg-3 mx-1">Coding Challenge Description</h2>
+                <ul class="lead text-dark fw-normal mb-1 mb-md-4 mb-lg-4
+                mx-0 ms-md-0 me-md-2 ms-lg-2 me-lg-5 ms-xxl-0 me-xxl-5">
+                    <li>Choose and enter an ending number and the app will generate a range of numbers 
+                    starting with 1 up to the your given number will be tested for divisibility by '3' and '5'.</li>
+                    <li>The numbers are divisible by ‘3’ they will be replaced by the word “Soda”</li>
+                    <li>The numbers divisible by ‘5’ will be replaced by the word “Pop”</li> 
+                    <li>The numbers that are divisible by both ‘3’ and ‘5’  
+                    will be replaced by the phrase “Soda Pop”</li>
+                    <li>Then the app uses the remaining numbers up to the user's chosen 
+                    ending number to determine which ones are even and which ones 
+                    are odd displaying the even numbers in black and the odd numbers 
+                    along with the 'Soda Pop' words in purple</li>
+                </ul>
             </div>
             <!-- app -->
             <div class="col">
+                <h3 id="instructions" class="display-5 border-bottom border-2 border-info mt-3 mb-3 mt-md-0 mb-md-4 mx-1 text-dark fw-bold">Instructions</h3>
                 <form action="#">
-                    <h5 class="lead text-secondary text-capitalize">Enter Number to "Soda Pop"!</h5>
+                    <h4 class="lead text-bs-purple  fw-bold mx-1">Enter Number to "Soda Pop"!</h4>
                     <!-- inputs for number value to run in soda/pop -->
                     <div class="row g-3">
-                        <div class="col-12">
-                            <label for="endNumber">Range of numbers starts at '1', choose the ending number and enter it below.</label>
-                            <input class="form-control border-info" type="Number" name="endNumber"  id="endNumber"
-                                placeholder="End Number" aria-label="End Number" value="0">
+                        <div class="col-12 mx-1">
+                            <label for="endNumber" class="text-info-emphasis fw-bold 
+                            mt-2 mb-2 my-md-2 mt-lg-3 mb-lg-2 my-xxl-3 mx-0">
+                            Range of numbers starts at '1', choose the ending number 
+                            enter it below.</label>
+                            <input class="form-control border-info" type="Number" name="endNumber"  
+                            id="endNumber" placeholder="End Number" aria-label="End Number" value="">
                         </div>
-                        <div class="col-12 text-end">
-                            <button id="btnSubmit" class="mt-2 mb-4 btn btn-secondary border-info text-info" type="button">
+                        <div class="col-12 text-end mx-1">
+                            <button id="btnSubmit" class="app-btn btn btn-dark border-dark text-light mt-2 mb-5 me-1" type="button">
                                 Soda Pop
                             </button>
-                    <h5 class="mt-3 text-secondary d-none">Soda Pop Values</h5>
+                    <h5 class="mt-3 text-secondary d-none mx-1">Soda Pop Values</h5>
                     <!-- inputs for soda/pop values -->
                     <div class="row g-3">
                         <div class="row g-3">
-                            <hr class="my-1"/>
                         <!-- results area -->
-                        <h2 class="mt-2 mb-0 text text-center">Results</h2>
-                        <div class="col-md-6 mt-1 mb-3 d-none">
+                        <h2 class="text text-center border-top border-bottom border-2 border-info mt-0 mt-md-1 mb-4 mb-md-4 mx-1 py-2">Results</h2>
+                        <div class="col-md-6 mt-1 mb-3 d-none mx-1">
                             <label for="sodaNumber">Soda</label>
                             <input class="form-control border-info" type="Number" name="sodaNumber" id="sodaNumber" 
                                 placeholder="Soda" aria-label="Soda" value="3">
                         </div>
-                        <div class="col-md-6 mt-1 mb-3 d-none">
+                        <div class="col-md-6 mt-1 mb-3 d-none mx-1">
                             <label for="popNumber">Pop</label>
                             <input class="form-control border-info" type="Number" name="popNumber" id="popNumber"
                                 placeholder="Pop" aria-label="Pop" value="5">
                         </div>
-                        <hr class="mb-1"/>
-                        <div class="table-responsive">
+                        <div class="table-responsive mt-3 mt-md-1 mb-4 mt-lg-4 mb-md-4 mb-xxl-5 mx-1">
                             <table class="table table-striped">
                                 <tbody id="results">
                                     <!-- JS Results -->
@@ -147,9 +139,7 @@
                 </form>
             </div>
         </div>
-
     </main>
-
 </body>
 
 <footer class="py-3">
@@ -159,12 +149,18 @@
                 &copy; 2023 Angel Corral Nunez
             </div>
             <div class="col text-center">
-                <img src="/images/Angel Single Semicolon Logo/Logo Files/For Web/svg/Color logo - no background.svg" height="48" width="350"/>
+                <img src="/images/Angel Single Semicolon Logo/Logo Files/For Web/svg/Color logo - no background.svg" 
+                     height="48" width="350"alt="Logo image of name 'Angel Corral Nunez'"/>
             </div>
             <div class="col text-center text-lg-end">
-                <a href="https://www.linkedin.com/in/angelcorralnunez/"><i
-                        class="socialicons bi bi-linkedin px-1"></i></a>
-                <a href="https://github.com/angelcorralnunez"><i class="socialicons bi bi-github px-1"></i></a>
+                <a target="blank" href="https://www.linkedin.com/in/angelcorralnunez/">
+                    <i class="socialicons bi bi-linkedin px-1" 
+                    alt="Icon for link to the 'Linkedin' professional 
+                    social network profile for Angel Corral Nunez."></i></a>
+                <a target="blank" href="https://github.com/angelcorralnunez">
+                    <i class="socialicons bi bi-github px-1" 
+                    alt="Icon for link to the'Github'code hosting platform 
+                    account for Angel Corral Nunez."></i></a>
             </div>
         </div>
     </div>
